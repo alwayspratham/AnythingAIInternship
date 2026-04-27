@@ -2,7 +2,6 @@ from fastapi import FastAPI,Depends
 from sqlalchemy.orm import Session
 from db.session import get_db
 from db.database import Base,engine
-from models import user, task
 from  routes import auth,task
 from fastapi.middleware.cors import CORSMiddleware
 
